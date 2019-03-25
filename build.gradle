@@ -1,0 +1,33 @@
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.0'
+  }
+}
+
+plugins {
+  id 'java'
+  id 'idea'
+}
+
+allprojects {
+    repositories {
+        jcenter() 
+        mavenCentral()
+        maven {
+            name "typesafe-maven-release"
+            url "https://repo.typesafe.com/typesafe/maven-releases"
+        }
+        ivy {
+            name "typesafe-ivy-release"
+            url "https://repo.typesafe.com/typesafe/ivy-releases"
+            layout "ivy"
+        }
+    }
+}
+
+subprojects {
+    version = '1.0'
+}

@@ -1,0 +1,46 @@
+plugins {
+    id 'play'
+    id 'idea'
+}
+
+repositories {
+    maven {
+        name "lightbend-maven-release"
+        url "https://repo.lightbend.com/lightbend/maven-releases"
+    }
+    ivy {
+        name "lightbend-ivy-release"
+        url "https://repo.lightbend.com/lightbend/ivy-releases"
+        layout "ivy"
+    }
+}
+
+model {
+    components {
+        play {
+            platform play: '2.6.15', scala: '2.12', java: '1.8'
+            injectedRoutesGenerator = true
+        }
+    }
+}
+
+dependencies {
+    play "io.grpc:grpc-netty-shaded:1.18.0"
+    play "io.grpc:grpc-protobuf:1.18.0"
+    play "io.grpc:grpc-stub:1.18.0"
+    play 'commons-lang:commons-lang:2.6'
+    playTest "com.google.guava:guava:17.0"
+    play "com.typesafe.play:play-guice_2.12:2.6.15"
+
+    play project(":backend-client")
+}
+
+idea {
+    module {
+        sourceDirs += file("app")
+        sourceDirs += file("build/src")
+        generatedSourceDirs += file("build/src")
+        testSourceDirs += file("test")
+        resourceDirs += file("conf")
+    }
+}

@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "datadog.examples.services";
+option java_outer_classname = "BackendServiceProto";
+option objc_class_prefix = "BS";
+
+package backend;
+
+service Backend {
+    rpc AddOne (AdditionRequest) returns (AdditionReply);
+    rpc AddTwo (AdditionRequest) returns (AdditionReply) {}
+}
+
+message AdditionRequest {
+    uint32 complement = 1;
+}
+
+message AdditionReply {
+    uint32 result = 1;
+}
+
