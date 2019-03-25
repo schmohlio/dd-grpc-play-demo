@@ -23,11 +23,12 @@ Build distributed traces
 
 We expect to see a trace across both process boundaries, capturing both calls to the gRPC service within a single HTTP request to Play.
  
+ ```
 
- GET /add3*
+ GET /add3                       (play)
 |---------------------------|
-   *addOne()*
+    addOne()                     (grpc)
   |-----------|
-               *addTwo()*
-               |-----------|
-
+                addTwo()         (grpc)
+               |-----------|     
+```
