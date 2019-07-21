@@ -1,0 +1,19 @@
+apply plugin: 'java-library'
+apply plugin: 'idea'
+
+
+dependencies {
+    compile 'io.grpc:grpc-core:1.18.0'
+    compile 'io.opentracing:opentracing-api:0.33.0'
+    compile 'io.opentracing:opentracing-util:0.33.0'
+
+}
+
+idea {
+    module {
+        sourceDirs += file("${projectDir}/build/generated/source/proto/main/java");
+        sourceDirs += file("${projectDir}/build/generated/source/proto/main/grpc");
+        sourceDirs += file("${projectDir}/build/resources/main")
+    }
+}
+

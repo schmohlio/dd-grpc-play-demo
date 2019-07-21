@@ -1,35 +1,193 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id=":backend-client" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/.." external.system.id="GRADLE" external.system.module.group="dd-grpc-play-demo" external.system.module.version="1.0" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager">
-    <output url="file://$MODULE_DIR$/out/production/classes" />
-    <output-test url="file://$MODULE_DIR$/out/test/classes" />
-    <exclude-output />
-    <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/proto/main/grpc" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/proto/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/build/resources/main" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
-      <excludeFolder url="file://$MODULE_DIR$/.gradle" />
-      <excludeFolder url="file://$MODULE_DIR$/build" />
-      <excludeFolder url="file://$MODULE_DIR$/out" />
+<module relativePaths="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output/>
+    <orderEntry type="inheritedJdk"/>
+    <content url="file://$MODULE_DIR$/">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false"/>
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/proto/main/java" isTestSource="false"/>
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/proto/main/grpc" isTestSource="false"/>
+      <sourceFolder url="file://$MODULE_DIR$/build/resources/main" isTestSource="false"/>
+      <excludeFolder url="file://$MODULE_DIR$/.gradle"/>
+      <excludeFolder url="file://$MODULE_DIR$/build"/>
     </content>
-    <orderEntry type="inheritedJdk" />
-    <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Gradle: io.grpc:grpc-protobuf:1.18.0" level="project" />
-    <orderEntry type="library" name="Gradle: io.grpc:grpc-stub:1.18.0" level="project" />
-    <orderEntry type="library" name="Gradle: io.grpc:grpc-protobuf-lite:1.18.0" level="project" />
-    <orderEntry type="library" name="Gradle: io.grpc:grpc-core:1.18.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.protobuf:protobuf-java:3.5.1" level="project" />
-    <orderEntry type="library" name="Gradle: org.checkerframework:checker-compat-qual:2.5.2" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.guava:guava:25.1-android" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.api.grpc:proto-google-common-protos:1.12.0" level="project" />
-    <orderEntry type="library" name="Gradle: io.grpc:grpc-context:1.18.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.7" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.errorprone:error_prone_annotations:2.2.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.code.findbugs:jsr305:3.0.2" level="project" />
-    <orderEntry type="library" name="Gradle: org.codehaus.mojo:animal-sniffer-annotations:1.17" level="project" />
-    <orderEntry type="library" name="Gradle: io.opencensus:opencensus-contrib-grpc-metrics:0.18.0" level="project" />
-    <orderEntry type="library" name="Gradle: io.opencensus:opencensus-api:0.18.0" level="project" />
-    <orderEntry type="library" name="Gradle: com.google.j2objc:j2objc-annotations:1.1" level="project" />
+    <orderEntry type="sourceFolder" forTests="false"/>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-protobuf/1.18.0/74d794cf9b90b620e0ad698008abc4f55c1ca5e2/grpc-protobuf-1.18.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-protobuf/1.18.0/1c6791c6af55f13db7022cb3810fd56f4a2359b9/grpc-protobuf-1.18.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-stub/1.18.0/5e4dbf944814d49499e3cbd9846ef58f629b5f32/grpc-stub-1.18.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-stub/1.18.0/9cf8435d715c47ad7cd2981a227b61253a5d9e63/grpc-stub-1.18.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-protobuf-lite/1.18.0/4ce979e12da19aaef862c1f48385cb5cf69d61d7/grpc-protobuf-lite-1.18.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-protobuf-lite/1.18.0/78d3dbc3e28840060112037869ea823bf98fd317/grpc-protobuf-lite-1.18.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-core/1.18.0/e21b343bba2006bac31bb16b7438701cddfbf564/grpc-core-1.18.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-core/1.18.0/2bc455b3b6dc83ae095ccffeb9773bac7e839497/grpc-core-1.18.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/3.5.1/8c3492f7662fa1cbf8ca76a0f5eb1146f7725acd/protobuf-java-3.5.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/3.5.1/7235a28a13938050e8cd5d9ed5133bebf7a4dca7/protobuf-java-3.5.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-compat-qual/2.5.2/dc0b20906c9e4b9724af29d11604efa574066892/checker-compat-qual-2.5.2.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-compat-qual/2.5.2/420d8098e865794623d5e412445f8d2adea0bd54/checker-compat-qual-2.5.2-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/25.1-android/bdaab946ca5ad20253502d873ba0c3313d141036/guava-25.1-android.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/25.1-android/a1fe5380cc1f2979e434c3b6ff43d69328ab4686/guava-25.1-android-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/com.google.api.grpc/proto-google-common-protos/1.12.0/1140cc74df039deb044ed0e320035e674dc13062/proto-google-common-protos-1.12.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/com.google.api.grpc/proto-google-common-protos/1.12.0/af18069b1d8368ffc8dce50a919df75f039cf507/proto-google-common-protos-1.12.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-context/1.18.0/c63e8b86af0fb16b5696480dc14f48e6eaa7193b/grpc-context-1.18.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-context/1.18.0/b9de26a0c63e994297ca8b36e21139aabc84fc01/grpc-context-1.18.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/bbb63ca253b483da8ee53a50374593923e3de2e2/gson-2.7-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.2.0/88e3c593e9b3586e1c6177f89267da6fc6986f0c/error_prone_annotations-2.2.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.2.0/a8cd7823aa1dcd2fd6677c0c5988fdde9d1fb0a3/error_prone_annotations-2.2.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/b19b5927c2c25b6c70f093767041e641ae0b1b35/jsr305-3.0.2-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.17/f97ce6decaea32b36101e37979f8b647f00681fb/animal-sniffer-annotations-1.17.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.17/8fb5b5ad9c9723951b9fccaba5bb657fa6064868/animal-sniffer-annotations-1.17-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/io.opencensus/opencensus-contrib-grpc-metrics/0.18.0/8e90fab2930b6a0e67dab48911b9c936470d43dd/opencensus-contrib-grpc-metrics-0.18.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/io.opencensus/opencensus-contrib-grpc-metrics/0.18.0/73c486b3124f087180853de76654bd67e646d55c/opencensus-contrib-grpc-metrics-0.18.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/io.opencensus/opencensus-api/0.18.0/b89a8f8dfd1e1e0d68d83c82a855624814b19a6e/opencensus-api-0.18.0.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/io.opencensus/opencensus-api/0.18.0/bf0e4d54c976a0f18331b0f3ebad3105dd25da7/opencensus-api-0.18.0-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.1/976d8d30bebc251db406f2bdb3eb01962b5685b3/j2objc-annotations-1.1.jar!/"/>
+        </CLASSES>
+        <JAVADOC/>
+        <SOURCES>
+          <root url="jar:///Users/matthewschmohl/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.1/dcd31de68a90e41e336f6b7afce0d39285c433d7/j2objc-annotations-1.1-sources.jar!/"/>
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
+  <component name="ModuleRootManager"/>
 </module>
