@@ -20,6 +20,7 @@ dependencies {
     compile "io.grpc:grpc-stub:1.18.0"
     runtime "io.grpc:grpc-netty:1.18.0"
     compile project(":backend-client")
+    compile project(":interceptors")
 }
 
 

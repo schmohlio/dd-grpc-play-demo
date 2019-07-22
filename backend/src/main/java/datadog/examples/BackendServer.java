@@ -1,6 +1,7 @@
 package datadog.examples;
 
 import datadog.examples.services.*;
+import interceptors.ServerTracingInterceptor;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
 import io.grpc.stub.StreamObserver;
@@ -20,6 +21,7 @@ public class BackendServer {
     int port = 50051;
     server = ServerBuilder.forPort(port)
             .addService(new BackendServiceImpl())
+            .intercept(new ServerTracingInterceptor())
             .build()
             .start();
     logger.info("Server started, listening on " + port);

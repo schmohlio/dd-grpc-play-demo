@@ -6,6 +6,7 @@ import com.google.common.util.concurrent.MoreExecutors;
 import datadog.examples.services.AdditionReply;
 import datadog.examples.services.AdditionRequest;
 import datadog.examples.services.BackendGrpc;
+import interceptors.ClientTracingInterceptor;
 import io.grpc.ManagedChannelBuilder;
 
 public class BackendClient {
@@ -13,9 +14,10 @@ public class BackendClient {
 
     public BackendClient() {
         stub = BackendGrpc.newFutureStub(
-            ManagedChannelBuilder.forAddress("localhost", 50051)
-                .usePlaintext()
-                .build());
+                ManagedChannelBuilder.forAddress("localhost", 50051)
+                    .usePlaintext()
+                    .build())
+            .withInterceptors(new ClientTracingInterceptor());
     }
 
     public ListenableFuture<Integer> addOne(int complement) {

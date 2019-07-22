@@ -33,6 +33,7 @@ dependencies {
     play "com.typesafe.play:play-guice_2.12:2.6.15"
 
     play project(":backend-client")
+    play project(":interceptors")
 }
 
 idea {

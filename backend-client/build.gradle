@@ -29,6 +29,7 @@ protobuf {
 dependencies {
     compile "io.grpc:grpc-protobuf:1.18.0"
     compile "io.grpc:grpc-stub:1.18.0"
+    compile project(":interceptors")
 }
 
 clean {
